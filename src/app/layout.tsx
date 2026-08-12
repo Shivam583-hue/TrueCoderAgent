@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, IBM_Plex_Sans, Hanken_Grotesk } from "next/font/google";
+import { JetBrains_Mono, IBM_Plex_Sans, Archivo } from "next/font/google";
 import "./globals.css";
 import "./site.css";
 
@@ -17,10 +17,11 @@ const ibmPlexSans = IBM_Plex_Sans({
   display: "swap",
 });
 
-const hankenGrotesk = Hanken_Grotesk({
-  variable: "--font-hanken",
+const archivoExpanded = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  weight: ["700", "800", "900"],
+  weight: "variable",
+  axes: ["wdth"],
   display: "swap",
 });
 
@@ -45,7 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${jetBrainsMono.variable} ${ibmPlexSans.variable} ${hankenGrotesk.variable}`}
+      className={`${jetBrainsMono.variable} ${ibmPlexSans.variable} ${archivoExpanded.variable}`}
       suppressHydrationWarning
     >
       <head>

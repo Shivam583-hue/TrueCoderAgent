@@ -54,15 +54,15 @@ export default function Sandbox() {
 
         <Reveal className="badge-row">
           <span className="badge">
-            <span className="dot" />
+            <span className="check">✓</span>
             Linux · Docker certified
           </span>
           <span className="badge">
-            <span className="dot" />
+            <span className="check">✓</span>
             22 adversarial checks passing
           </span>
           <span className="badge">
-            <span className="dot" />
+            <span className="check">✓</span>
             Digest-pinned, --pull never
           </span>
         </Reveal>

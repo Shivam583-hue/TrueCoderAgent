@@ -50,16 +50,17 @@ export default function Hero() {
         <div className="term-stage hero-anim-scale" style={{ animationDelay: "160ms" }}>
           <div className="term-glow" aria-hidden="true" />
           <div className="float-pill fp-1" style={{ animationDelay: "500ms" }}>
-            <span className="dot" style={{ background: "var(--green)" }} />
-            AUDIT ADMITTED
+            <span className="label">audit</span>
+            <span className="value">admitted</span>
           </div>
           <div className="float-pill fp-2" style={{ animationDelay: "660ms" }}>
-            <span className="dot" style={{ background: "var(--accent)" }} />
-            POLICY OK · risk: low
+            <span className="label">policy</span>
+            <span className="value">ok</span>
+            <span className="trail">· risk low</span>
           </div>
           <div className="float-pill fp-3" style={{ animationDelay: "820ms" }}>
-            <span className="dot" style={{ background: "var(--amber)" }} />
-            SHA-256 recorded
+            <span className="label">sha-256</span>
+            <span className="value">recorded</span>
           </div>
           <div className="term-window">
             <div className="term-bar">

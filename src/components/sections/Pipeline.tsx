@@ -17,7 +17,7 @@ const STEPS = [
   {
     n: 3,
     label: "SELECT",
-    desc: "Capability-matched backend — local process group or sandbox.",
+    desc: "Capability-matched backend: a local process group or the sandbox.",
   },
   {
     n: 4,

@@ -10,12 +10,12 @@ const STATS = [
   {
     kind: "count" as const,
     target: 2520,
-    label: "Automated test scenarios — unit, contract, integration, e2e, sandbox",
+    label: "Automated test scenarios across unit, contract, integration, e2e, and sandbox",
   },
   {
     kind: "count" as const,
     target: 44743,
-    label: "Test lines — roughly a 1.06 : 1 ratio to source",
+    label: "Test lines, roughly a 1.06:1 ratio to source",
   },
   {
     kind: "count" as const,
@@ -45,8 +45,8 @@ export default function Scorecard() {
           <h2 className="section-title">Scored, not vibed.</h2>
           <p className="lede">
             Figures below were measured directly from the working tree. No
-            coverage percentage is claimed here, because none is measured —
-            that&apos;s a deliberate omission, not an oversight.
+            coverage percentage is claimed here, since none has been
+            measured. That&apos;s left out on purpose, not forgotten.
           </p>
         </Reveal>
 
@@ -73,8 +73,8 @@ export default function Scorecard() {
         <Reveal>
           <p className="scorecard-foot">
             Default execution ceiling: 600s runtime · 1 MiB produced output ·
-            64 KiB returned to the model — tightenable per-request, never
-            widenable.
+            64 KiB returned to the model. Requests can tighten these per
+            call, never widen them.
           </p>
         </Reveal>
       </div>

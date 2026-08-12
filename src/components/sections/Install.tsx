@@ -64,16 +64,16 @@ export default function Install() {
 
           <Reveal delay={80} className="install-side">
             <p>
-              TrueCoder resolves the project root from where you launch it, so
-              everything the filesystem tools can reach is rooted right
-              there. No provider account is required up front — run{" "}
-              <code className="mono">/connect</code> inside the app to sign in.
+              TrueCoder resolves the project root from wherever you launch
+              it, so the filesystem tools stay rooted there. You don&apos;t
+              need a provider account up front, either: open the app and run{" "}
+              <code className="mono">/connect</code> to sign in.
             </p>
             <p>
-              Prefer isolation over speed for a given command? Build the
+              Want isolation instead of speed for a given command? Build the
               sandbox image once with{" "}
               <code className="mono">docker build -t truecoder-exec:1 container/</code>{" "}
-              and TrueCoder will offer it automatically.
+              and TrueCoder will start offering it on its own.
             </p>
             <div className="btn-row">
               <a className="btn btn-primary" href={REPO_URL} target="_blank" rel="noopener noreferrer">

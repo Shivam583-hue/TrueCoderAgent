@@ -26,7 +26,7 @@ const archivoExpanded = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "TrueCoder — a coding agent with an auditable execution plane",
+  title: "TrueCoder: a coding agent with an auditable execution plane",
   description:
     "TrueCoder is a terminal-native coding agent. Every shell command it runs is policy-checked, approved, bounded, sandboxable, and durably recorded before it executes.",
 };

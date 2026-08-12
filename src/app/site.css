@@ -380,8 +380,27 @@ h2.section-title {
   border-radius: 12px;
   border: 1px solid var(--border-strong);
   background: var(--bg-elevated);
-  box-shadow: 0 30px 60px -20px var(--shadow), 0 2px 0 rgba(255, 255, 255, 0.02) inset;
+  box-shadow: 0 40px 70px -22px var(--shadow), 0 2px 0 rgba(255, 255, 255, 0.02) inset;
   overflow: hidden;
+  transform: perspective(1500px) rotateX(10deg) rotateY(-18deg) rotateZ(1.5deg);
+  transform-origin: 50% 55%;
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.term-stage:hover .term-window {
+  transform: perspective(1500px) rotateX(4deg) rotateY(-8deg) rotateZ(0.5deg);
+}
+@media (max-width: 980px) {
+  .term-window {
+    transform: none;
+  }
+  .term-stage:hover .term-window {
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .term-window {
+    transform: none;
+  }
 }
 .term-bar {
   display: flex;
@@ -455,9 +474,20 @@ h2.section-title {
 
 /* ============ THESIS STRIP ============ */
 .strip {
+  position: relative;
+  z-index: 2;
+  margin-top: -32px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  border-radius: 28px 28px 0 0;
   background: var(--surface);
+  box-shadow: 0 -24px 48px -30px var(--shadow);
+}
+@media (max-width: 760px) {
+  .strip {
+    margin-top: -20px;
+    border-radius: 20px 20px 0 0;
+  }
 }
 .strip-inner {
   display: grid;

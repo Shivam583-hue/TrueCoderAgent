@@ -31,7 +31,7 @@ const CHECKS = [
   },
   {
     b: "Critical commands",
-    v: "A command still permitted at critical risk is refused on the host — sandbox only.",
+    v: "A command still permitted at critical risk is refused on the host and only allowed in the sandbox.",
   },
 ];
 
@@ -42,13 +42,13 @@ export default function Sandbox() {
         <Reveal className="section-head">
           <span className="eyebrow">Certified sandbox profile</span>
           <h2 className="section-title">
-            When isolation matters, it&apos;s proven — not assumed.
+            When isolation matters, it&apos;s proven, not assumed.
           </h2>
           <p className="lede">
-            Local execution is fast and has your toolchain already installed.
-            When a command needs isolation instead, this is what it runs
-            inside — and every claim below is exercised by an adversarial
-            test against real Docker.
+            Local execution is fast and already has your toolchain
+            installed. When a command needs isolation instead, this is what
+            it runs inside, and every claim below has been checked by an
+            adversarial test against real Docker.
           </p>
         </Reveal>
 

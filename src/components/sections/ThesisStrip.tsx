@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 const ITEMS = [
   {
     k: "Local by default",
-    v: "Your toolchain, your virtualenvs, your caches — commands run where your project already lives.",
+    v: "Commands run with your own toolchain, your virtualenvs, and your caches, right where your project already lives.",
   },
   {
     k: "Sandboxed on request",

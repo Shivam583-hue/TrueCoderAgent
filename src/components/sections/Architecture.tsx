@@ -11,7 +11,7 @@ export default function Architecture() {
             it&apos;s allowed to happen.
           </h2>
           <p className="lede">
-            The shell tool is the thin, model-facing bridge between them — it
+            The shell tool is the thin, model-facing bridge between them. It
             converts arguments and formats results, and holds none of the
             actual authority.
           </p>

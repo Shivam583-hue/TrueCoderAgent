@@ -66,7 +66,7 @@ export default function Hero() {
               <span className="term-dot" />
               <span className="term-dot" />
               <span className="term-dot" />
-              <span className="term-title">truecoder — zsh</span>
+              <span className="term-title">truecoder · zsh</span>
             </div>
             <Image
               src="/truecoder-hero.jpg"

@@ -5,6 +5,7 @@ const REPO_URL = "https://github.com/Shivam583-hue/TrueCoder";
 export default function Hero() {
   return (
     <section className="hero" id="top">
+      <div className="hero-backdrop" aria-hidden="true" />
       <div className="wrap hero-grid">
         <div>
           <span className="eyebrow hero-anim" style={{ animationDelay: "0ms" }}>

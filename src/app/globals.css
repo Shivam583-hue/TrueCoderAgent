@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-display: var(--font-jbm);
+  --font-display: var(--font-hanken);
   --font-mono: var(--font-jbm);
   --font-body: var(--font-plex);
 }
@@ -27,7 +27,10 @@
   --red: #e2584f;
   --red-soft: rgba(226, 88, 79, 0.14);
   --shadow: rgba(0, 0, 0, 0.55);
-  --grid-line: rgba(148, 152, 168, 0.07);
+  --grid-dot: rgba(154, 158, 176, 0.16);
+  --glow-accent: rgba(91, 143, 239, 0.4);
+  --glow-amber: rgba(232, 147, 76, 0.22);
+  --glow-fade: rgba(10, 10, 13, 0);
   color-scheme: dark;
 }
 
@@ -52,7 +55,10 @@
     --red: #b93c31;
     --red-soft: rgba(185, 60, 49, 0.1);
     --shadow: rgba(30, 26, 10, 0.12);
-    --grid-line: rgba(82, 85, 106, 0.08);
+    --grid-dot: rgba(82, 85, 106, 0.14);
+    --glow-accent: rgba(49, 89, 201, 0.1);
+    --glow-amber: rgba(168, 95, 24, 0.07);
+    --glow-fade: rgba(246, 245, 240, 0);
     color-scheme: light;
   }
 }
@@ -77,7 +83,10 @@
   --red: #b93c31;
   --red-soft: rgba(185, 60, 49, 0.1);
   --shadow: rgba(30, 26, 10, 0.12);
-  --grid-line: rgba(82, 85, 106, 0.08);
+  --grid-dot: rgba(82, 85, 106, 0.14);
+  --glow-accent: rgba(49, 89, 201, 0.1);
+  --glow-amber: rgba(168, 95, 24, 0.07);
+  --glow-fade: rgba(246, 245, 240, 0);
   color-scheme: light;
 }
 
@@ -96,10 +105,9 @@ body {
   font-size: 16px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 44px 44px;
-  background-attachment: fixed;
+  background-image: radial-gradient(var(--grid-dot) 1px, transparent 1px);
+  background-size: 26px 26px;
+  background-position: -12px -12px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 h1,

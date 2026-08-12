@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-jbm);
+  --font-mono: var(--font-jbm);
+  --font-body: var(--font-plex);
+}
+
+/* ============ TOKENS — dark is the base (bare :root); light is the override ============ */
+:root {
+  --bg: #0a0a0d;
+  --bg-elevated: #101118;
+  --surface: #15161d;
+  --surface-2: #1c1e28;
+  --border: #272935;
+  --border-strong: #3a3d4d;
+  --text: #edecf2;
+  --text-dim: #9498a8;
+  --text-faint: #5c5f70;
+  --accent: #5b8fef;
+  --accent-ink: #0a0a0d;
+  --accent-soft: rgba(91, 143, 239, 0.14);
+  --amber: #e8934c;
+  --amber-soft: rgba(232, 147, 76, 0.14);
+  --green: #4fb787;
+  --green-soft: rgba(79, 183, 135, 0.14);
+  --red: #e2584f;
+  --red-soft: rgba(226, 88, 79, 0.14);
+  --shadow: rgba(0, 0, 0, 0.55);
+  --grid-line: rgba(148, 152, 168, 0.07);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f6f5f0;
+    --bg-elevated: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #edece3;
+    --border: #ddd8ca;
+    --border-strong: #c6c0ae;
+    --text: #17181f;
+    --text-dim: #52556a;
+    --text-faint: #7b7e8e;
+    --accent: #3159c9;
+    --accent-ink: #ffffff;
+    --accent-soft: rgba(49, 89, 201, 0.1);
+    --amber: #a85f18;
+    --amber-soft: rgba(168, 95, 24, 0.12);
+    --green: #157a52;
+    --green-soft: rgba(21, 122, 82, 0.1);
+    --red: #b93c31;
+    --red-soft: rgba(185, 60, 49, 0.1);
+    --shadow: rgba(30, 26, 10, 0.12);
+    --grid-line: rgba(82, 85, 106, 0.08);
+    color-scheme: light;
+  }
+}
+
+:root[data-theme="light"] {
+  --bg: #f6f5f0;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #edece3;
+  --border: #ddd8ca;
+  --border-strong: #c6c0ae;
+  --text: #17181f;
+  --text-dim: #52556a;
+  --text-faint: #7b7e8e;
+  --accent: #3159c9;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(49, 89, 201, 0.1);
+  --amber: #a85f18;
+  --amber-soft: rgba(168, 95, 24, 0.12);
+  --green: #157a52;
+  --green-soft: rgba(21, 122, 82, 0.1);
+  --red: #b93c31;
+  --red-soft: rgba(185, 60, 49, 0.1);
+  --shadow: rgba(30, 26, 10, 0.12);
+  --grid-line: rgba(82, 85, 106, 0.08);
+  color-scheme: light;
+}
+
+/* ============ RESET / BASE ============ */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-plex), -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-attachment: fixed;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+}
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.mono {
+  font-family: var(--font-jbm), ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+}
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+section {
+  scroll-margin-top: 76px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

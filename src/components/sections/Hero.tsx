@@ -8,9 +8,6 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="wrap hero-grid">
         <div>
-          <span className="eyebrow hero-anim" style={{ animationDelay: "0ms" }}>
-            Terminal coding agent · open source
-          </span>
           <h1 className="hero-anim" style={{ animationDelay: "80ms" }}>
             Checked. Approved.
             <br />

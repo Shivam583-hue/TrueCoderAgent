@@ -75,12 +75,11 @@ export default function Pipeline() {
     <section id="pipeline" className="section-pad">
       <div className="wrap">
         <Reveal className="section-head">
-          <span className="eyebrow">The execution plane</span>
           <h2 className="section-title">
             A command doesn&apos;t run until it has earned trust.
           </h2>
           <p className="lede">
-            Shell execution is a security event, not a subprocess call. Six
+            Shell execution is a security event and NOT a generic subprocess call. A total of six
             gates stand between a model deciding to run something and that
             thing actually executing.
           </p>

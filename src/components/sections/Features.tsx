@@ -68,7 +68,6 @@ export default function Features() {
     <section id="features" className="section-pad section-band">
       <div className="wrap">
         <Reveal className="section-head">
-          <span className="eyebrow">What&apos;s inside</span>
           <h2 className="section-title">Fifteen tools. One audit trail.</h2>
           <p className="lede">
             Every tool the model can call, from reading a file to running a

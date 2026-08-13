@@ -23,7 +23,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="footer-note">
-          <span>No license file is committed yet, so default copyright applies.</span>
+          <span>MIT license.</span>
           <span>© 2026 TrueCoder. Built in the terminal, for the terminal.</span>
         </div>
       </div>

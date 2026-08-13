@@ -11,7 +11,7 @@ const ITEMS = [
   },
   {
     k: "Audited, always",
-    v: "Policy denial, approval rejection, and every run reach one durable row. No route escapes audit.",
+    v: "Policy denial, approval rejection, and every run reach one durable row. There's are no routes that escape audit.",
   },
 ];
 

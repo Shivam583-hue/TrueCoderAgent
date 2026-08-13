@@ -8,7 +8,6 @@ export default function Install() {
     <section id="install" className="section-pad section-band">
       <div className="wrap">
         <Reveal className="section-head">
-          <span className="eyebrow">Get started</span>
           <h2 className="section-title">One line, and it&apos;s on your machine.</h2>
         </Reveal>
 

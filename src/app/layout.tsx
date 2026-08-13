@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next"
 import { JetBrains_Mono, IBM_Plex_Sans, Chakra_Petch } from "next/font/google";
 import InteractiveGrid from "@/components/InteractiveGrid";
 import "./globals.css";
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <InteractiveGrid />
         {children}
+        <Analytics />
       </body>
     </html>
   );

@@ -5,9 +5,8 @@ export default function Architecture() {
     <section id="architecture" className="section-pad section-band">
       <div className="wrap">
         <Reveal className="section-head">
-          <span className="eyebrow">Two planes, one boundary</span>
           <h2 className="section-title">
-            The agent decides what to do. The execution plane decides whether
+            The agent decides what to do while the execution plane decides whether
             it&apos;s allowed to happen.
           </h2>
           <p className="lede">

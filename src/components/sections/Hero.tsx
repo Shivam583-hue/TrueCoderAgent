@@ -6,7 +6,6 @@ const REPO_URL = "https://github.com/Shivam583-hue/TrueCoder";
 export default function Hero() {
   return (
     <section className="hero" id="top">
-      <div className="hero-backdrop" aria-hidden="true" />
       <div className="wrap hero-grid">
         <div>
           <span className="eyebrow hero-anim" style={{ animationDelay: "0ms" }}>
@@ -17,7 +16,7 @@ export default function Hero() {
             <br />
             Bounded. <span className="accent">Recorded.</span>
             <br />
-            Then it <span className="amber">runs.</span>
+            Then it runs.
           </h1>
           <p className="lede hero-anim" style={{ animationDelay: "160ms" }}>
             TrueCoder is a terminal-native coding agent with an auditable

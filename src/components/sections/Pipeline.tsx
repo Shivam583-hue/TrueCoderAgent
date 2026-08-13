@@ -98,13 +98,6 @@ export default function Pipeline() {
             </div>
           ))}
         </div>
-
-        <Reveal>
-          <p className="pipeline-note">
-            &quot;Policy denial and approval rejection all still reach one
-            durable terminal row. No route escapes audit.&quot;
-          </p>
-        </Reveal>
       </div>
     </section>
   );

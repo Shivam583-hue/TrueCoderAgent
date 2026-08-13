@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, IBM_Plex_Sans, Archivo } from "next/font/google";
+import { JetBrains_Mono, IBM_Plex_Sans, Chakra_Petch } from "next/font/google";
+import InteractiveGrid from "@/components/InteractiveGrid";
 import "./globals.css";
 import "./site.css";
 
@@ -17,11 +18,10 @@ const ibmPlexSans = IBM_Plex_Sans({
   display: "swap",
 });
 
-const archivoExpanded = Archivo({
-  variable: "--font-archivo",
+const chakraPetch = Chakra_Petch({
+  variable: "--font-chakra",
   subsets: ["latin"],
-  weight: "variable",
-  axes: ["wdth"],
+  weight: ["600", "700"],
   display: "swap",
 });
 
@@ -46,13 +46,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${jetBrainsMono.variable} ${ibmPlexSans.variable} ${archivoExpanded.variable}`}
+      className={`${jetBrainsMono.variable} ${ibmPlexSans.variable} ${chakraPetch.variable}`}
       suppressHydrationWarning
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <InteractiveGrid />
+        {children}
+      </body>
     </html>
   );
 }

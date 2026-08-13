@@ -42,12 +42,7 @@ export default function Scorecard() {
       <div className="wrap">
         <Reveal className="section-head">
           <span className="eyebrow">Measured, not claimed</span>
-          <h2 className="section-title">Scored, not vibed.</h2>
-          <p className="lede">
-            Figures below were measured directly from the working tree. No
-            coverage percentage is claimed here, since none has been
-            measured. That&apos;s left out on purpose, not forgotten.
-          </p>
+          <h2 className="section-title">Engineering scorecard.</h2>
         </Reveal>
 
         <div className="stat-grid">

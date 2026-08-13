@@ -26,10 +26,9 @@
   display: inline-block;
 }
 
-h2.section-title {
-  font-family: var(--font-archivo), -apple-system, "Segoe UI", sans-serif;
-  font-weight: 800;
-  font-stretch: 125%;
+.section-title {
+  font-family: var(--font-chakra), -apple-system, "Segoe UI", sans-serif;
+  font-weight: 700;
   font-size: clamp(1.55rem, 1.1rem + 2vw, 2.45rem);
   line-height: 1.22;
   letter-spacing: 0;
@@ -285,20 +284,6 @@ h2.section-title {
   padding-bottom: clamp(64px, 8vw, 96px);
   overflow: hidden;
 }
-.hero-backdrop {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(1400px, 160vw);
-  height: 600px;
-  z-index: 0;
-  pointer-events: none;
-  background: radial-gradient(closest-side, var(--glow-accent), transparent 72%) 68% 22% / 52%
-    58% no-repeat;
-  -webkit-mask-image: linear-gradient(to bottom, black 45%, transparent 92%);
-  mask-image: linear-gradient(to bottom, black 45%, transparent 92%);
-}
 .hero-grid {
   position: relative;
   z-index: 1;
@@ -314,10 +299,9 @@ h2.section-title {
 }
 
 .hero h1 {
-  font-family: var(--font-archivo), -apple-system, "Segoe UI", sans-serif;
-  font-weight: 800;
-  font-stretch: 125%;
-  font-size: clamp(2rem, 1.1rem + 3.6vw, 3.35rem);
+  font-family: var(--font-chakra), -apple-system, "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.1rem, 1.15rem + 3.8vw, 3.5rem);
   line-height: 1.15;
   letter-spacing: 0;
   text-wrap: balance;
@@ -325,9 +309,6 @@ h2.section-title {
 }
 .hero h1 .accent {
   color: var(--accent);
-}
-.hero h1 .amber {
-  color: var(--amber);
 }
 
 .hero .lede {
@@ -675,14 +656,6 @@ h2.section-title {
     gap: 4px;
     padding-top: 6px;
   }
-}
-.pipeline-note {
-  margin-top: 44px;
-  font-family: var(--font-jbm), monospace;
-  font-size: 0.84rem;
-  color: var(--text-dim);
-  border-left: 2px solid var(--amber);
-  padding-left: 16px;
 }
 
 /* ============ FEATURE SPEC GRID ============ */
@@ -1134,4 +1107,30 @@ footer {
   font-size: 0.78rem;
   color: var(--text-faint);
   font-family: var(--font-jbm), monospace;
+}
+
+/* ============ 404 ============ */
+.notfound {
+  padding-top: clamp(140px, 20vw, 200px);
+  padding-bottom: clamp(80px, 10vw, 120px);
+  min-height: 70vh;
+}
+.notfound-wrap {
+  max-width: 640px;
+}
+.notfound-title {
+  max-width: none;
+}
+.notfound-window {
+  margin-top: 36px;
+}
+.notfound-window pre {
+  line-height: 1.9;
+}
+.notfound-denied {
+  color: var(--red);
+  font-weight: 500;
+}
+.notfound-cta {
+  margin-top: 32px;
 }

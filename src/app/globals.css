@@ -27,7 +27,7 @@
   --red: #e2584f;
   --red-soft: rgba(226, 88, 79, 0.14);
   --shadow: rgba(0, 0, 0, 0.55);
-  --grid-dot: rgba(154, 158, 176, 0.16);
+  --scanline: rgba(255, 255, 255, 0.07);
   --glow-accent: rgba(91, 143, 239, 0.16);
   color-scheme: dark;
 }
@@ -53,7 +53,7 @@
     --red: #b93c31;
     --red-soft: rgba(185, 60, 49, 0.1);
     --shadow: rgba(30, 26, 10, 0.12);
-    --grid-dot: rgba(82, 85, 106, 0.14);
+    --scanline: rgba(20, 20, 25, 0.05);
     --glow-accent: rgba(49, 89, 201, 0.06);
     color-scheme: light;
   }
@@ -79,7 +79,7 @@
   --red: #b93c31;
   --red-soft: rgba(185, 60, 49, 0.1);
   --shadow: rgba(30, 26, 10, 0.12);
-  --grid-dot: rgba(82, 85, 106, 0.14);
+  --scanline: rgba(20, 20, 25, 0.05);
   --glow-accent: rgba(49, 89, 201, 0.06);
   color-scheme: light;
 }
@@ -99,9 +99,13 @@ body {
   font-size: 16px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  background-image: radial-gradient(var(--grid-dot) 1px, transparent 1px);
-  background-size: 26px 26px;
-  background-position: -12px -12px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--scanline) 0px,
+    var(--scanline) 1px,
+    transparent 1px,
+    transparent 4px
+  );
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 h1,

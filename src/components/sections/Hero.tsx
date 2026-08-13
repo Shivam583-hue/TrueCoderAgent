@@ -1,4 +1,5 @@
 import Image from "next/image";
+import InstallSnippet from "@/components/InstallSnippet";
 
 const REPO_URL = "https://github.com/Shivam583-hue/TrueCoder";
 
@@ -24,21 +25,15 @@ export default function Hero() {
             evaluation, an approval fingerprint, and a durable audit record
             before a single byte of your project changes.
           </p>
-          <div className="hero-ctas hero-anim" style={{ animationDelay: "240ms" }}>
-            <a className="btn btn-primary" href="#install">
-              Install TrueCoder
-            </a>
-            <a
-              className="btn btn-ghost"
-              href={REPO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View source →
-            </a>
-            <span className="pill">Prebuilt download · coming soon</span>
+          <div className="hero-install hero-anim" style={{ animationDelay: "240ms" }}>
+            <InstallSnippet compact />
           </div>
-          <div className="hero-meta hero-anim" style={{ animationDelay: "300ms" }}>
+          <div className="hero-secondary hero-anim" style={{ animationDelay: "300ms" }}>
+            <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+              View source on GitHub →
+            </a>
+          </div>
+          <div className="hero-meta hero-anim" style={{ animationDelay: "360ms" }}>
             <span>42,214 src lines</span>
             <span className="dot">·</span>
             <span>2,520 test scenarios</span>

@@ -37,7 +37,7 @@ export default function Nav() {
             GitHub
           </a>
           <a className="btn btn-primary btn-sm" href="#install">
-            Install
+            Download
           </a>
         </div>
       </div>

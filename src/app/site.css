@@ -1111,9 +1111,11 @@ footer {
 
 /* ============ 404 ============ */
 .notfound {
-  padding-top: clamp(140px, 20vw, 200px);
-  padding-bottom: clamp(80px, 10vw, 120px);
-  min-height: 70vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: clamp(60px, 10vw, 100px);
+  padding-bottom: clamp(60px, 10vw, 100px);
 }
 .notfound-wrap {
   max-width: 640px;

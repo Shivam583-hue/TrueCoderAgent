@@ -30,7 +30,7 @@ export default function Hero() {
             </a>
           </div>
           <div className="hero-meta hero-anim" style={{ animationDelay: "360ms" }}>
-            <span>42,214 src lines</span>
+            <span>42,214 src lines + 44,743 test lines</span>
             <span className="dot">·</span>
             <span>2,520 test scenarios</span>
             <span className="dot">·</span>

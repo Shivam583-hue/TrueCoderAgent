@@ -290,16 +290,14 @@ h2.section-title {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: min(1600px, 180vw);
-  height: 820px;
+  width: min(1400px, 160vw);
+  height: 600px;
   z-index: 0;
   pointer-events: none;
-  background: radial-gradient(closest-side, var(--glow-accent), transparent 68%) 42% 18% /
-      70% 65% no-repeat,
-    radial-gradient(closest-side, var(--glow-amber), transparent 70%) 78% 40% / 45% 55%
-      no-repeat;
-  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 96%);
-  mask-image: linear-gradient(to bottom, black 55%, transparent 96%);
+  background: radial-gradient(closest-side, var(--glow-accent), transparent 72%) 68% 22% / 52%
+    58% no-repeat;
+  -webkit-mask-image: linear-gradient(to bottom, black 45%, transparent 92%);
+  mask-image: linear-gradient(to bottom, black 45%, transparent 92%);
 }
 .hero-grid {
   position: relative;
@@ -367,10 +365,8 @@ h2.section-title {
 .term-glow {
   position: absolute;
   inset: -12%;
-  background: radial-gradient(closest-side, var(--accent-soft), transparent 70%)
-      15% 20% / 60% 60% no-repeat,
-    radial-gradient(closest-side, var(--amber-soft), transparent 70%) 85% 80% /
-      55% 55% no-repeat;
+  background: radial-gradient(closest-side, var(--accent-soft), transparent 72%) 50% 42% / 62%
+    62% no-repeat;
   filter: blur(6px);
   pointer-events: none;
 }

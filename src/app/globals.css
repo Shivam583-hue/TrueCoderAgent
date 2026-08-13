@@ -28,9 +28,7 @@
   --red-soft: rgba(226, 88, 79, 0.14);
   --shadow: rgba(0, 0, 0, 0.55);
   --grid-dot: rgba(154, 158, 176, 0.16);
-  --glow-accent: rgba(91, 143, 239, 0.4);
-  --glow-amber: rgba(232, 147, 76, 0.22);
-  --glow-fade: rgba(10, 10, 13, 0);
+  --glow-accent: rgba(91, 143, 239, 0.16);
   color-scheme: dark;
 }
 
@@ -56,9 +54,7 @@
     --red-soft: rgba(185, 60, 49, 0.1);
     --shadow: rgba(30, 26, 10, 0.12);
     --grid-dot: rgba(82, 85, 106, 0.14);
-    --glow-accent: rgba(49, 89, 201, 0.1);
-    --glow-amber: rgba(168, 95, 24, 0.07);
-    --glow-fade: rgba(246, 245, 240, 0);
+    --glow-accent: rgba(49, 89, 201, 0.06);
     color-scheme: light;
   }
 }
@@ -84,9 +80,7 @@
   --red-soft: rgba(185, 60, 49, 0.1);
   --shadow: rgba(30, 26, 10, 0.12);
   --grid-dot: rgba(82, 85, 106, 0.14);
-  --glow-accent: rgba(49, 89, 201, 0.1);
-  --glow-amber: rgba(168, 95, 24, 0.07);
-  --glow-fade: rgba(246, 245, 240, 0);
+  --glow-accent: rgba(49, 89, 201, 0.06);
   color-scheme: light;
 }
 

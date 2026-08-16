@@ -14,7 +14,7 @@ export default function TermsOfService() {
     <LegalPage eyebrow="Legal" title="Terms of service." updated="August 13, 2026">
       <p className="legal-disclaimer">
         This is a basic set of terms written for a solo, open-source project.
-        It covers the essentials in plain language — it isn&apos;t a
+        It covers the essentials in plain language, it isn&apos;t a
         substitute for professional legal advice.
       </p>
 
@@ -41,7 +41,7 @@ export default function TermsOfService() {
         <h2>The TrueCoder software</h2>
         <p>
           TrueCoder is released under the MIT License. Once you have a copy
-          of the source, the license in the repository — not this page —
+          of the source, the license in the repository, not this page,
           governs what you can do with it. In short: it&apos;s provided AS
           IS, without warranty of any kind, and the maintainer isn&apos;t
           liable for damages arising from its use. Read the{" "}

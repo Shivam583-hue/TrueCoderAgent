@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
     <LegalPage eyebrow="Legal" title="Privacy policy." updated="August 13, 2026">
       <p className="legal-disclaimer">
         This is a basic policy written for a solo, open-source project. It
-        describes this website in plain terms — it isn&apos;t a substitute
+        describes this website in plain terms, it isn&apos;t a substitute
         for professional legal advice.
       </p>
 
@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
           This describes what happens to your data when you visit this
           website, the online preview for TrueCoder, an open-source terminal
           coding agent. It does not describe how the TrueCoder application
-          itself handles data once you&apos;ve installed it — that runs
+          itself handles data once you&apos;ve installed it, that runs
           entirely on your own machine, outside our control, and is covered
           in the project&apos;s README and source on GitHub.
         </p>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
           This site doesn&apos;t set cookies for tracking or advertising.
           Your light/dark theme choice is saved in your browser&apos;s{" "}
           <code className="mono">localStorage</code> so it persists between
-          visits — that stays on your device and is never sent to us.
+          visits, that stays on your device and is never sent to us.
         </p>
       </div>
 
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
         <h2>If you email us</h2>
         <p>
           The security contact in the footer reaches a real inbox. If you
-          email us — to report a vulnerability or for any other reason —
+          email us, to report a vulnerability or for any other reason,
           we&apos;ll have your email address and whatever you wrote, for as
           long as it takes to deal with it.
         </p>

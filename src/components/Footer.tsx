@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const REPO_URL = "https://github.com/Shivam583-hue/TrueCoder";
 
 export default function Footer() {
@@ -20,6 +22,8 @@ export default function Footer() {
               CI status
             </a>
             <a href="mailto:shivamshivamshivam456@gmail.com">Report a vulnerability</a>
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
           </nav>
         </div>
         <div className="footer-note">
